@@ -28,14 +28,7 @@ public class actionfragment extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment actionfragment.
-     */
+
     // TODO: Rename and change types and number of parameters
     public static actionfragment newInstance(String param1, String param2) {
         actionfragment fragment = new actionfragment();
@@ -49,17 +42,21 @@ public class actionfragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
+
     View v=     inflater.inflate(R.layout.fragment_actionfragment, container, false);
     return v;
     }
+
 }

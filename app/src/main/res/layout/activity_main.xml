@@ -20,13 +20,13 @@
             android:id="@+id/add"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ADD RECORD" />
+            android:text="INPUT" />
 
         <Button
             android:id="@+id/search"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SEARCH RECORD" />
+            android:text="CALCULATE" />
     </LinearLayout>
 
     <LinearLayout

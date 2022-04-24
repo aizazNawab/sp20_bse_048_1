@@ -24,7 +24,6 @@ public class messagefragment extends Fragment implements View.OnClickListener {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    Button myButton1;
 
     public messagefragment() {
         // Required empty public constructor
@@ -57,13 +56,12 @@ public class messagefragment extends Fragment implements View.OnClickListener {
         }
     }
 
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View vv= inflater.inflate(R.layout.fragment_messagefragment, container, false);
-        myButton1 = (Button) vv.findViewById(R.id.searchs);
-        myButton1.setOnClickListener(this);
     return vv;
     }
 

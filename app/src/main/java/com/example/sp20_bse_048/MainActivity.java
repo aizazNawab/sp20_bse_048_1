@@ -10,42 +10,39 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-Button a,s,ss,store;
-    TextView n,g,e,ad,numberss;
+Button add,search,searchemail;
+    TextView textView,e,ad,numberss;
     String z[][]=new String[10][];
-  EditText n11,n22,n33;
+  EditText email,name,address,age;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        n=findViewById(R.id.numbers);
-        g=findViewById(R.id.textView);
-        e=findViewById(R.id.result);
-        a=findViewById(R.id.add);
-        s=findViewById(R.id.search);
-        n11=findViewById(R.id.n1);
-        n22=findViewById(R.id.n2);
-        n33=findViewById(R.id.n3);
-        store=findViewById(R.id.save);
-        numberss=findViewById(R.id.numbers);
-
-    a.setOnClickListener(new View.OnClickListener() {
+        searchemail=findViewById(R.id.searchemail);
+        add=findViewById(R.id.add);
+        search=findViewById(R.id.search);
+        email=findViewById(R.id.email);
+        name=findViewById(R.id.name);
+        age=findViewById(R.id.age);
+        address=findViewById(R.id.address);
+        textView=findViewById(R.id.textView);
+    add.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
 actionfragment a=new actionfragment();
             FragmentTransaction t=getSupportFragmentManager().beginTransaction();
             t.replace(R.id.l2,a).commit();
-        g.setText("");
+        textView.setText("");
         }
     });
 
-    s.setOnClickListener(new View.OnClickListener() {
+    search.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             messagefragment aa=new messagefragment();
             FragmentTransaction tt=getSupportFragmentManager().beginTransaction();
             tt.replace(R.id.l2,aa).commit();
-            g.setText("");
+            textView.setText("");
         }
     });
     }

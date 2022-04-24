@@ -17,28 +17,37 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <EditText
-            android:id="@+id/n1"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="number 1"
+            android:hint="email"
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/n2"
+            android:id="@+id/name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="number 2"
+            android:hint="name"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
         <EditText
-            android:id="@+id/n3"
+            android:id="@+id/age"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="number 3"
+            android:hint="age"
+            android:inputType="textPersonName"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="address"
             android:inputType="textPersonName"
             android:minHeight="48dp" />
 
@@ -47,6 +56,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
-            android:text="Store numbers" />
+            android:text="Save record" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
